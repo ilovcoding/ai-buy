@@ -10,11 +10,15 @@ export const runtime = 'edge'
 const configuration = new Configuration({
   apiKey: process.env.OPENAI_API_KEY
 })
+console.log("🚀 ~ file: route.ts:12 ~ process.env.OPENAI_API_KEY:", process.env.OPENAI_API_KEY)
+
+console.log("🚀 ~ file: route.ts:13 ~ configuration:", configuration)
 
 const openai = new OpenAIApi(configuration)
 
 export async function POST(req: Request) {
   const json = await req.json()
+  console.log("🚀 ~ file: route.ts:18 ~ POST ~ json:", json)
   const { messages, previewToken } = json
   const userId = (await auth())?.user.id
 

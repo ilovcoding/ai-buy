@@ -37,6 +37,7 @@ export default async function ChatPage({ params }: ChatPageProps) {
   }
 
   const chat = await getChat(params.id, session.user.id)
+  console.log("🚀 ~ file: page.tsx:41 ~ ChatPage ~ chat:", chat)
 
   if (!chat) {
     notFound()
@@ -46,5 +47,5 @@ export default async function ChatPage({ params }: ChatPageProps) {
     notFound()
   }
 
-  return <Chat id={chat.id} initialMessages={chat.messages} />
+  return <Chat />
 }

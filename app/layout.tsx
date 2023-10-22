@@ -11,8 +11,8 @@ import { Header } from '@/components/header'
 
 export const metadata: Metadata = {
   title: {
-    default: 'Next.js AI Chatbot',
-    template: `%s - Next.js AI Chatbot`
+    default: '小快 AI 购',
+    template: `%s - 小快 AI 购`
   },
   description: 'An AI-powered chatbot template built with Next.js and Vercel.',
   themeColor: [

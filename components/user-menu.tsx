@@ -26,7 +26,7 @@ function getUserInitials(name: string) {
 export function UserMenu({ user }: UserMenuProps) {
   return (
     <div className="flex items-center justify-between">
-      <DropdownMenu>
+      {/* <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <Button variant="ghost" className="pl-0">
             {user?.image ? (
@@ -72,7 +72,7 @@ export function UserMenu({ user }: UserMenuProps) {
             Log Out
           </DropdownMenuItem>
         </DropdownMenuContent>
-      </DropdownMenu>
+      </DropdownMenu> */}
     </div>
   )
 }
